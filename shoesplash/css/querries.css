@@ -1,0 +1,51 @@
+/*-----------------------resolution 960px----------------*/
+@media screen and (max-width:640px) {
+  header.container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #cart {
+    visibility: hidden;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .container section {
+    padding: 20px;
+  }
+
+  .container aside {
+    padding: 20px;
+    margin: 0;
+  }
+
+  #slider h2 {
+    font-size: 1rem;
+  }
+
+  #select {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #news {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /*footer*/
+  #info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #bottombar {
+    display: flex;
+    flex-direction: column;
+  }
+}
