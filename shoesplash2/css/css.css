@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=PT+Sans+Narrow:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+
+body {
+  background-color: gray;
+  max-width: 1500px;
+  padding: 0;
+  margin: auto;
+}
+
+h1, h2 {
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-size: 1.4em;
+}
+
+h3 {
+  font-family: 'Courgette', sans-serif;
+  font-size: 1.4em;
+}
+
+#slider, #select, #new, #best, #crush {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.topbar {
+  background-color: rgb(12, 11, 11);
+  color: #fff;
+  text-align: center;
+  overflow: hidden;
+}
+
+div.container {
+  background-color: #f6d4f5;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  grid-auto-rows: auto;
+  grid-template-areas:
+    "a a b"
+    "a a b"
+    "c c c";
+}
+
+.container a {
+  grid-area: a;
+  justify-self: start;
+}
+
+div.container img {
+  width: 100%;
+  height: auto;
+}
+
+#cart {
+  grid-area: b;
+  justify-self: end;
+  display: flex;
+  margin-right: 1.2rem;
+}
+
+nav {
+  grid-area: c;
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.6rem;
+}
+
+nav a {
+  color: black;
+  width: 50%;
+  text-align: center;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*main--------------------*/
+main.container {
+  width: 75%;
+  padding: 0;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#slider {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+}
+
+img {
+  max-width: 100%;
+  padding: 10px;
+}
+
+#slider h2 {
+  position: absolute;
+  top: 1;
+  background-color: #f6d4f5;
+  opacity: 0.8;
+  text-align: left;
+  padding: 10px;
+  margin: 10px;
+  font-size: 1.4rem;
+  display: flex;
+  flex-direction: column;
+}
+
+main.container span {
+  font-weight: 100;
+}
+
+/* #select {
+  width: 100%;
+  background-color: #fff;
+  display: grid;
+  padding: 1.2rem;
+  margin-top: 1.2rem;
+  justify-content: space-around;
+
+}
+
+#select h1 {
+  grid-column-start: 1;
+  grid-column-end: 6;
+  text-align: center;
+} */
+#select {
+  display: flex;
+  flex-direction: row;
+  background-color: #fff;
+  width: 100%;
+  margin-top: 1.2rem;
+  justify-content: space-around;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  padding-top: 1.4rem;
+
+}
+
+#select h1 {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-size: 30px;
+}
+
+.escarpin img {
+  box-sizing: border-box;
+  max-width: 75%;
+  vertical-align: middle;
+  display: inline-block;
+  /*display: table-row-group;*/
+}
+
+#select article:nth-child(4) {
+  margin-top: 20px;
+}
+
+#select article:nth-child(5) {
+  margin-top: 22px;
+}
+
+#select article:nth-child(6) {
+  margin-top: 20px;
+}
+
+#news {
+  background-color: #fff;
+  margin-top: 1.2rem;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-around;
+  text-align: center;
+}
+
+#new, #best, #crush {
+  background-color: #fff;
+  border: 1px solid transparent;
+  padding: 0 20px;
+}
+
+#new h2 {
+  background-color: rgb(208, 104, 218);
+  color: #fff;
+  margin: 10px 0;
+  font-weight: 100;
+}
+
+#best h2 {
+  background-color: rgb(126, 180, 126);
+  margin: 10px 0;
+  color: #fff;
+  font-weight: 100;
+}
+
+#crush h2 {
+  background-color: rgb(50, 163, 167);
+  margin: 10px 0;
+  color: #fff;
+  font-weight: 100;
+}
+
+/*footer-------------------------*/
+
+footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #f6d4f5;
+  margin-top: 1.2rem;
+}
+
+#info {
+  background-color: #cc93ca;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  text-align: center;
+}
+
+#info article {
+  display: flex;
+  flex-direction: column;
+}
+
+#info article small:hover {
+  color: #fff;
+  cursor: pointer;
+}
+
+#bottombar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  text-align: center;
+}
+
+#bottombar article {
+  display: flex;
+  flex-direction: column;
+}
+
+#bottombar h2 {
+  padding: .5rem;
+}
+
+#bottombar ul li {
+  opacity: 0.5;
+}

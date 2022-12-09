@@ -1,0 +1,76 @@
+/*-----------------------resolution 960px----------------*/
+@media screen and (max-width:640px) {
+  #cart {
+    display: none;
+    /* visibility: hidden; */
+  }
+
+  div.container {
+    width: 100%;
+    display: inherit;
+    display: flex;
+    flex-direction: column;
+  }
+
+
+
+  .container nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    
+  }
+
+
+  /* header.container {
+    display: flex;
+    flex-direction: column;
+  } */
+
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .container section {
+    margin-top: 1.2rem;
+    padding: 20px;
+  }
+
+  .container select {
+    padding: 20px;
+    margin: 0;
+  }
+#select h1{
+ position: inherit;
+}
+  #slider h2 {
+    font-size: 1rem;
+  }
+
+  #select {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #news {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /*footer*/
+  #info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #bottombar {
+    display: flex;
+    flex-direction: column;
+  }
+}
